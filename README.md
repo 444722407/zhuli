@@ -1,5 +1,8 @@
 # ndj
 
+## vue扭蛋机的实现
+
+
 ## Project setup
 ```
 yarn install
