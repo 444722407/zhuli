@@ -2,6 +2,7 @@
 
 ## vue扭蛋机的实现
 
+https://444722407.github.io/ndj/ [https://444722407.github.io/ndj]
 
 ## Project setup
 ```
