@@ -1,4 +1,6 @@
 module.exports ={
     publicPath:"./",
-    lintOnSave:false
+    lintOnSave:false,
+    filenameHashing:false,
+    productionSourceMap:false
 }

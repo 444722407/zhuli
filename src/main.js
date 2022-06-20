@@ -3,7 +3,7 @@ import App from './App.vue'
 import './app.css'
 import VConsole from 'vconsole';
 import {createI18n} from 'vue-i18n'
-import {lang}  from './lang'
+import lang  from './lang'
 
 if(process.env.NODE_ENV === "development"){
   

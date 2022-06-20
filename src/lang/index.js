@@ -1,5 +1,5 @@
-// 英语-en 印尼-in 西班牙-es 葡萄牙-pt 泰语-th
-export const lang = {
+
+export default {
   en: {
     title: require("../assets/images/en_title.png"),
     play: "You have {play} more chances",

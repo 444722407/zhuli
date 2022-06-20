@@ -33,18 +33,18 @@
           />
         </div>
         <!-- add class disable -->
-        <div class="btn start" :class="{ disable: is_fulling }" @click="start">
+        <div class="btn start" :class="{ disable: is_fulling }" @click="start(3000)">
           {{$t("start")}}
         </div>
       </div>
     </div>
-    <div class="record_btn"><i class="icon_record"></i>{{$t("record")}}</div>
+    <div class="record_btn" @click="rewardRecord"><i class="icon_record"></i>{{$t("record")}}</div>
   </div>
 </template>
 
 <script>
 
-// 球的物料
+// init ball
 var arr = [
   {
     name: "绿色球",
@@ -100,14 +100,24 @@ export default {
   data() {
     return {
       balls: [],
-      game_play: 5,
+      game_play: 1,
       is_fulling: false,
       result: {},
+      timer:null,
+      dateLine:0
     };
   },
   created(){
     window.init = this.init;
-     this.$root.$i18n.locale = "en" 
+    // document.addEventListener("visibilitychange",()=>{
+    //   if (!document.hidden) {
+    //     if(+new Date() - this.dateLine >=3000){
+    //       console.log('end_animite')
+    //        Array.from(document.querySelectorAll(".ball")).map((item) => {
+    //           item.className = "ball";
+    //       });
+    //     }
+    //   }});
   },  
   mounted() {
     console.log("vconsole");
@@ -116,17 +126,35 @@ export default {
     }); 
    
   },
+  unmounted(){
+    clearTimeout(this.timer)
+  },  
   methods: {
-    init: function (params) {
-      console.log("app的消息");
-      console.log(params);
+    isAndroid:function(){
+      return window.android!=null && typeof(window.android)!="undefined";
     },
-    start: function () {
+    rewardRecord:function(){
+      if(this.isAndroid()){
+        window.android.rewardRecord()
+      }
+    },
+    init: function (params) {
+      console.log("app----messages");
+      console.log(params);
+      this.$root.$i18n.locale = params.lang || "en";
+     
+    },
+    start: function (delay) {
+      
       if (this.game_play <= 0) {
-        this.is_fulling = true;
+        // this.is_fulling = true;
+          if(this.isAndroid()){
+            window.android.loadVideo()
+          }
         return;
       }
       if (!this.is_fulling) {
+        this.dateLine = + new Date()
         this.game_play--;
         this.is_fulling = true;
         this.result = "";
@@ -148,18 +176,23 @@ export default {
 
         this.balls = [...balls];
 
-        setTimeout(() => {
-          if (this.game_play <= 0) {
-            this.is_fulling = true;
-          } else {
-            this.is_fulling = false;
-          }
+       this.timer =  setTimeout(() => {
+          // if (this.game_play <= 0) {
+           this.is_fulling = false;
+          // } else {
+          //   this.is_fulling = false;
+          // }
           this.result = this.balls[0];
           this.balls.splice(0, 1);
           Array.from(document.querySelectorAll(".ball")).map((item) => {
             item.style.animationPlayState = "paused";
           });
-        }, 3000);
+
+          if(this.isAndroid()){
+            window.android.onComplete()
+          }
+
+        }, delay);
       }
     },
   },
