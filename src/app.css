@@ -106,8 +106,48 @@ body{
     width: 1.1467rem;
     height: 1.1467rem;
 }
-.ball >img{
-    width: 100%;
+
+.ball_type{
+    height: 100%;
+}
+.ball_type1{
+    background: url(./assets/images/ball1.png) no-repeat center/100% 100%;
+}
+.ball_type2{
+    background: url(./assets/images/ball2.png) no-repeat center/100% 100%;
+}
+.ball_type3{
+    background: url(./assets/images/ball3.png) no-repeat center/100% 100%;
+}
+.ball_type4{
+    background: url(./assets/images/ball4.png) no-repeat center/100% 100%;
+}
+.ball_type .tag{
+    font-size: 0.32rem;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 50%;
+    transform: translate(-50%);
+    line-height: 1;
+    padding: 0 0.1333rem;
+    border-radius: 100px;
+    font-weight: bold;
+}
+.ball_type .tag1{
+    color: #256ad4 ;
+    background-image: linear-gradient(to top,#d5ebff,#feffff);
+}
+.ball_type .tag2{
+    color: #079395 ;
+    background-image: linear-gradient(to top,#d7fff5,#feffff);
+}
+.ball_type .tag3{
+    color: #f34c0a ;
+    background-image: linear-gradient(to top,#ffe9d4,#feffff);
+}
+.ball_type .tag4{
+    color: #e2265c;
+   background-image: linear-gradient(to top,#ffd4dd,#fffefe);
 }
 .ball:nth-child(1){
     left: 0.75rem;
@@ -298,6 +338,9 @@ body{
     font-weight: bold;
 }
 .start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: url(./assets/images/start.png) no-repeat center/cover;
     color: #d92020;
 }
@@ -318,6 +361,12 @@ body{
     width: 0.3733rem;height: 0.3733rem;
     background: url(./assets/images/icon_record.png) no-repeat center/100% 100%;
     margin: 0 0.1333rem;
+}
+.icon_guanggao{
+    display: inline-block;
+    width: 0.6667rem;height: 0.48rem;
+    background: url(./assets/images/guanggao.png) no-repeat center/100% 100%;
+    margin-right: 0.1333rem;
 }
 /*电脑访问优化*/
 @media only screen and (min-width: 1024px){

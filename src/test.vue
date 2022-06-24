@@ -70,6 +70,53 @@ export default {
   created() {
     window.init = this.init;
     window.getAward = this.getAward;
+    init({
+    "total_count": 3,
+    "free_count": 1,
+    "award_count": 5,
+    "default_area": 0,
+     "language":"en",
+    "step_ball": [
+      "200",
+      "400",
+      "500",
+      "1000"
+    ],
+    "award_ball": [
+      {
+        "type": 1,
+        "award": "50"
+      },
+      {
+        "type": 1,
+        "award": "80"
+      },
+      {
+        "type": 1,
+        "award": "100"
+      },
+      {
+        "type": 1,
+        "award": "200"
+      },
+      {
+        "type": 2,
+        "award": "188"
+      },
+      {
+        "type": 2,
+        "award": "288"
+      },
+      {
+        "type": 3,
+        "award": "2"
+      },
+      {
+        "type": 3,
+        "award": "6"
+      }
+    ]
+  })
     // document.addEventListener("visibilitychange",()=>{
     //   if (!document.hidden) {
     //     if(+new Date() - this.dateLine >=3000){
@@ -140,9 +187,10 @@ export default {
     getAward: function (params) {
       console.log("app----messages----onAward");
       console.log("getAward",params);
-      this.getResult = {...params};
+      this.getResult = params;
     },
     isAndroid: function () {
+      return true;
       return window.android != null && typeof window.android != "undefined";
     },
     rewardRecord: function () {
@@ -200,7 +248,11 @@ export default {
         // 获得奖励
         if (this.isAndroid()) {
           console.log('onAward')
-          window.android.onAward();
+          //window.android.onAward();
+          getAward({
+              "award_type":1,
+              "award":"80"
+          })
         }
      }
     },
