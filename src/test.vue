@@ -74,7 +74,7 @@ export default {
     "total_count": 3,
     "free_count": 1,
     "award_count": 5,
-    "default_area": 0,
+    "default_area": 1,
      "language":"en",
     "step_ball": [
       "200",
@@ -84,8 +84,8 @@ export default {
     ],
     "award_ball": [
       {
-        "type": 1,
-        "award": "50"
+        "type": 4,
+        "award": "1000"
       },
       {
         "type": 1,
@@ -128,8 +128,9 @@ export default {
     //   }});
   },
   watch:{
-    getResult:function(){
-        const result = this.result;
+    getResult:function(data){
+        const result = data;
+       
         console.log('监听result',result)
         this.game_play--;
 
@@ -157,10 +158,12 @@ export default {
         this.balls = [...balls];
 
         const removeIndex = balls.findIndex((item) => {
-          return item.type == result.award_type && item.award == item.award;
+
+          return item.type == result.award_type && item.award == result.award;
         });
 
-     
+      
+
         this.timer = setTimeout(() => {
           if (this.game_play <= 0) {
             this.is_fulling = true;
@@ -168,7 +171,7 @@ export default {
             this.is_fulling = false;
           }
 
-          this.result = this.balls.splice(removeIndex, 1)[0];
+         this.result = this.balls.splice(removeIndex, 1)[0];
 
           Array.from(document.querySelectorAll(".ball")).map((item) => {
             item.style.animationPlayState = "paused";
@@ -249,10 +252,7 @@ export default {
         if (this.isAndroid()) {
           console.log('onAward')
           //window.android.onAward();
-          getAward({
-              "award_type":1,
-              "award":"80"
-          })
+          getAward({"award":"1000","award_type":4})
         }
      }
     },

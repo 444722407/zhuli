@@ -67,7 +67,7 @@ export default {
       dateLine: 0,
     };
   },
-  created() {
+  mounted() {
     window.init = this.init;
     window.getAward = this.getAward;
     // document.addEventListener("visibilitychange",()=>{
@@ -79,10 +79,14 @@ export default {
     //       });
     //     }
     //   }});
+     if (this.isAndroid()) {
+        console.log('loadIndex')
+        window.android.loadIndex();
+      }
   },
   watch:{
-    getResult:function(){
-        const result = this.result;
+    getResult:function(data){
+        const result = data;
         console.log('监听result',result)
         this.game_play--;
 
@@ -110,7 +114,7 @@ export default {
         this.balls = [...balls];
 
         const removeIndex = balls.findIndex((item) => {
-          return item.type == result.award_type && item.award == item.award;
+          return item.type == result.award_type && item.award == result.award;
         });
 
      
@@ -158,7 +162,7 @@ export default {
 
       this.$root.$i18n.locale = (params && params.language) || "en";
 
-     
+      this.result = {};
 
       this.game_play = params.total_count;
 
