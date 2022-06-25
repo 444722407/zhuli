@@ -21,7 +21,7 @@
           :class="item.classname"
         >
           <div class="ball_type" :class="'ball_type' + item.type">
-            <p class="tag" :class="'tag' + item.type">{{ item.award }}</p>
+            <p class="tag" :class="'tag' + item.type">{{ item.type == 2?'?':item.award }}</p>
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@
             :class="'ball_type' + result.type"
             v-if="result.type && result.award"
           >
-            <p class="tag" :class="'tag' + result.type">{{ result.award }}</p>
+            <p class="tag" :class="'tag' + result.type">{{ result.type == 2?'?':result.award }}</p>
           </div>
         </div>
         <!-- add class disable -->
@@ -72,9 +72,9 @@ export default {
     window.getAward = this.getAward;
     init({
     "total_count": 3,
-    "free_count": 1,
+    "free_count": 0,
     "award_count": 5,
-    "default_area": 1,
+    "default_area": 0,
      "language":"en",
     "step_ball": [
       "200",
@@ -133,7 +133,7 @@ export default {
        
         console.log('监听result',result)
         this.game_play--;
-
+        this.free_count = 1;
         this.is_fulling = true;
 
         const balls = [...this.balls].sort(() => {
@@ -240,7 +240,10 @@ export default {
       if (this.game_play > 0 && this.free_count <= 0) {
         console.log("loadVideo");
         if (this.isAndroid()) {
-          window.android.loadVideo();
+          //window.android.loadVideo();
+           setTimeout(() => {
+            getAward({"award":"1000","award_type":4})
+           }, 3000);
         }
         return;
       }
