@@ -1,0 +1,327 @@
+{
+    "user_info": {
+      "id": 11306,
+      "name": "Sp1234..",
+      "parent_id": 0,
+      "img": ""
+    },
+    "curr_invite_assist": {
+      "id": 9,
+      "user_id": 11306,
+      "period": 24,
+      "setting_id": 0,
+      "type": 2,
+      "start_amount": "99",
+      "curr_amount": "99",
+      "finished_amount": "99",
+      "free_count": 33,
+      "country": "",
+      "expire_time": 1658474117,
+      "status": 0,
+      "create_date": 20220721,
+      "create_time": "2022-07-21 15:15:17",
+      "system": "android",
+      "version_num": 113,
+      "countdown": 80177
+    },
+    "lottery_count": 33,
+    "reward_amount": "99",
+    "reward_coins_currency": "(≈฿ 0.01)",
+    "difference_amount": "0.00",
+    "assist_user_data": {},
+    "invite_assist_share": [
+      "邀请助力文案1http://share.localstepgo.com/invite_assist?pid=11306",
+      "邀请助力文案2http://share.localstepgo.com/invite_assist?pid=11306"
+    ],
+    "invite_btn_value": "邀请助力按钮2",
+    "rule_content": [
+      "rule desc1.",
+      "rule desc2",
+      "rule desc3"
+    ],
+    "total_finished": [
+      {
+        "nickname": "Am***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/beccf7856215ee3bbb977210ca248533.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 08:48:58",
+        "share_content": "99"
+      },
+      {
+        "nickname": "Ma***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/519eb2f6bda20455c29a1edae2051b4d.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 01:21:53",
+        "share_content": "888"
+      },
+      {
+        "nickname": "An***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/fbcea06db43fb1af868ed858ecb3de30.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 08:22:14",
+        "share_content": "99"
+      },
+      {
+        "nickname": "Kh***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/c0275e7d529bb1a6e041046469d3dff7.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 21:17:34",
+        "share_content": "77"
+      },
+      {
+        "nickname": "ka***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2022-01-06/f138379b988f0ed9fe6703451e2ad4cd.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 07:54:44",
+        "share_content": "77"
+      },
+      {
+        "nickname": "An***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/f38fba8ff6b16febfe78ca0636e2c5ac.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 14:17:28",
+        "share_content": "77"
+      },
+      {
+        "nickname": "Na***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/3375ae0569b204a05c21b4ce269a935a.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 03:41:11",
+        "share_content": "77"
+      },
+      {
+        "nickname": "Ma***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/b76e8d32f5dc24debbd3a0a52238d4ef.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-19 20:06:10",
+        "share_content": "888"
+      },
+      {
+        "nickname": "Sh***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/1c6858244e273f9e0f2b3dc05e70d29b.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 11:23:41",
+        "share_content": "77"
+      },
+      {
+        "nickname": "Ro***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/a4b8caee3c9499b54e2e3c431c31ed58.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 02:59:07",
+        "share_content": "888"
+      },
+      {
+        "nickname": "Ha***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2022-02-10/a55aa768cdbbc1de458eee9a4a9356c8.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 15:39:17",
+        "share_content": "99"
+      },
+      {
+        "nickname": "Mz***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/b1e875b42754698b0c7ff3d4412b2481.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 11:17:17",
+        "share_content": "888"
+      },
+      {
+        "nickname": "Br***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/41fbebfae2b479caea5f3eefbaf29463.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 08:45:37",
+        "share_content": "888"
+      },
+      {
+        "nickname": "Tr***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-31/f48bc3838809731a2357b53c7ab9a7e4.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 15:26:05",
+        "share_content": "99"
+      },
+      {
+        "nickname": "St***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/68d0cb3403ae08846d49f29dac5fff04.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 07:04:04",
+        "share_content": "99"
+      },
+      {
+        "nickname": "Ju***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/9c2ec312bee65d87a557025465316dff.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 03:48:20",
+        "share_content": "77"
+      },
+      {
+        "nickname": "Na***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/6984be0b3b18cb94e1d1982b00aaa40a.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 15:37:44",
+        "share_content": "99"
+      },
+      {
+        "nickname": "Ng***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-31/33c60df117847a809a1e4c092e8bbf47.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 22:00:26",
+        "share_content": "888"
+      },
+      {
+        "nickname": "Ha***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2022-01-30/219addef4a4c4fabbf8fa185c397b5fa.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 20:04:22",
+        "share_content": "99"
+      },
+      {
+        "nickname": "Cu***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/e612a28452ebdffd49318c93d2cdd8d6.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 20:54:37",
+        "share_content": "77"
+      },
+      {
+        "nickname": "An***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/ad5f172787091100015f1805777d74e8.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 02:51:32",
+        "share_content": "77"
+      },
+      {
+        "nickname": "Na***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2022-01-12/af5aff3f70163385d598637c3ac03b61.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 05:50:00",
+        "share_content": "888"
+      },
+      {
+        "nickname": "ix***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-31/244dc3cfb9e4a2531a32c802a671d828.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 23:45:12",
+        "share_content": "99"
+      },
+      {
+        "nickname": "Ch***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/02e9dd0e1730c3fa5e1d5141f2fb8e01.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 03:09:47",
+        "share_content": "77"
+      },
+      {
+        "nickname": "Dy***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/f38d6137796b1c7574c403ee8b6d71ba.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 22:01:27",
+        "share_content": "888"
+      },
+      {
+        "nickname": "Le***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/e3a9865d4650bbb6baaddb292bd563bb.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-19 17:54:17",
+        "share_content": "77"
+      },
+      {
+        "nickname": "Ra***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/2ab31fb1ab3caccd9020e81e92298eb1.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-20 16:21:05",
+        "share_content": "77"
+      },
+      {
+        "nickname": "Ya***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/243599da579f08dc57edb8298052a116.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 15:44:58",
+        "share_content": "888"
+      },
+      {
+        "nickname": "Sh***",
+        "avatar": "https://p.ireadone.com/uploads/avatar/2021-12-29/a9b004a590daae5d2dc7e5921e0e9251.jpg",
+        "reward_amount": "2000",
+        "type": "1",
+        "desc": "成功领取2000金币",
+        "create_time": "2022-07-21 15:41:22",
+        "share_content": "77"
+      }
+    ],
+    "runtime": {
+      "isDebug": true,
+      "apiLog": true,
+      "userId": 11306,
+      "country": "tha",
+      "client": {
+        "client": "android",
+        "version": "1.1.3",
+        "version_code": "113",
+        "token": "VSdVd1ZvU2YCdgo5XGIGYgljA2QNOwAsBiZVcAl3BG4IMFJkB2JVMg1qXWZaZVE8WTJVMlon",
+        "device": "device id tylor ph",
+        "country": "ph",
+        "locale": "zh_CN",
+        "timezone": "28800",
+        "tz": "America/Sao_Paulo",
+        "app_lang": "3",
+        "adid": "321",
+        "ip": "127.0.0.1"
+      },
+      "apiFinish": true,
+      "isInit": true
+    }
+  }
